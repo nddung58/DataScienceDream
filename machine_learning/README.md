@@ -51,19 +51,20 @@ Test set: Dữ liệu kiểm thử đánh giá model cuối cùng ví như final
 
 ## Loss function
 ### Regression
-MAE(Mean Absolute Error) = (e0 + e1 + ...+ en) / (n+1)
-MSE(Mean Squared Error) = ((e1)^2 + (e2)^2 + ...) /(n+1)
+MAE(Mean Absolute Error) = $$\frac{(e_0 + e_1 + ...+ e_n)} {(n+1)}$$
+
+MSE(Mean Squared Error) = $$\frac{((e1)^2 + (e2)^2 + ...)} {(n+1)}$$
 
 MSE khuếch đại mất mát để mô hình tập trung vào sai số lớn nhưng nhược điểm là không quá chính xác(khi 0<e<1 khó tối ưu).
 MAE có những model sai số lớn khi huấn luyện tốt thì độ chính xác cao hơn.
 
 Model Optimize -> Minimal Loss
 
-Coefficient of Determination: R^2 = 1-(e1^2 + e2^2 + ...)/((y1-y_mean)^2 + (y2-y_mean)^2 + ...)
+Coefficient of Determination: $$R^2 = \frac{1-((e_1)^2 + (e_2)^2 + ...)}{((y_1-\bar{y})^2 + (y_2 - \bar{y})^2 + ...)}$$
 
 ### Classification
 Cross Entropy Loss: 
 
 <img src="../images/CrossEntropyLoss.png" width=600></br>
 
-Loss = -(1 . log(0.9) + 0 . log(0.08) + 0 . log(0) + 0 . log(0.02))
+$Loss = -(1 . log(0.9) + 0 . log(0.08) + 0 . log(0) + 0 . log(0.02))$

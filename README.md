@@ -1,5 +1,5 @@
-p<p align="center">
- <h1 align="center">Machine Learning</h1>
+<p align="center">
+ <h1 align="center">Data Science</h1>
 </p>
 
 
@@ -10,3 +10,4 @@ p<p align="center">
 ## General concept AI 
 
 <img src="images/GeneralConceptAI.png" width=600><br/> 
+
